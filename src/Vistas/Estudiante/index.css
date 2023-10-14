@@ -1,9 +1,8 @@
-/*MENU DESPLEGABLE OPCIONES DE ESTUDIANTE*/
-/* Estilos para el menú desplegable */
+
 .menuopciones {
     position:static; bottom:500px;
     width: 60px;
-    /* background-color: #96c9ff;  */
+   
     color: white;
     display: flex;
     flex-direction: column;
@@ -24,18 +23,17 @@
     margin: 10px 0;
   }
 
-  /* Estilos para las opciones del menú */
   .opciones {
     list-style: none;
     padding: 0;
     margin: 0;
-    overflow: hidden; /* Oculta las opciones por defecto */
+    overflow: hidden; 
     max-height: 0;
     transition: max-height 0.3s ease-in-out;
   }
   
   .mostrar {
-    max-height: 500px; /* Altura máxima para mostrar las opciones */
+    max-height: 500px; 
     transition: max-height 0.3s ease-in-out;
   }
   
@@ -44,22 +42,16 @@
     cursor: pointer;
   }
   
-  /* Estilos adicionales para las opciones */
-  .opciones li:hover {
-    background-color: #0056b3; /* Color de fondo más oscuro al pasar el mouse */
-  }
   
-  /* Estilos para el contenido de la vista de estudiantes */
+  .opciones li:hover {
+    background-color: #0056b3;
+  }
+
   .contenido {
     flex-grow: 1;
     padding: 20px;
   }
 
-
-
-
-/*RAMOS DISPONIBLES PARA AYUDANTÍA*/
-  /* Estilos para los cuadros de los ramos */
 .cuadro-ramo {
   background-color: #007bff;
   color: white;
@@ -73,5 +65,5 @@
 }
 
 .cuadro-ramo:hover {
-  background-color: #0056b3; /* Color de fondo más oscuro al pasar el mouse */
+  background-color: #0056b3; 
 }

@@ -8,21 +8,12 @@ function Login() {
       <section className="card">
         <h3>Ingrese sus credenciales</h3>
 
-<div>
-  <input
-    type="text"
-    className="input"
-    placeholder="Rut"
-  />
-</div>
-<div>
-  <input
-    type="password"
-    className="input"
-    placeholder="Contraseña"
-  />
-</div>
-
+        <div>
+          <input type="text" className="input" placeholder="Rut" />
+        </div>
+        <div>
+          <input type="password" className="input" placeholder="Contraseña" />
+        </div>
 
         <div className="button-container">
           <button>
@@ -32,10 +23,10 @@ function Login() {
           </button>
         </div>
         <div>
-  <p className="parrafo">
-    <a href="https://gestion-clave.ucm.cl/#/">¿Olvidó su contraseña?</a>
-  </p>
-</div>
+          <p className="parrafo">
+            <a href="https://gestion-clave.ucm.cl/#/">¿Olvidó su contraseña?</a>
+          </p>
+        </div>
       </section>
     </form>
   );

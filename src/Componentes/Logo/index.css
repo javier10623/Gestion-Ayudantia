@@ -1,0 +1,13 @@
+.background-logo {
+    background-color: #f3f3f3; 
+    width: 100vw; 
+    height: 100vh; 
+    display : contents; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 350px; 
+    opacity: 0.1; 
+  }

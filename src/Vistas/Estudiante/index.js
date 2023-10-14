@@ -2,6 +2,7 @@ import React from "react";
 import "./index.css";
 import Navbar from "../../Componentes/Navbar";
 import Footer from "../../Componentes/Footer";
+import Loginho from "../../Componentes/Logo";
 function VistaEstudiantes() {
   return (
     <>
@@ -11,10 +12,11 @@ function VistaEstudiantes() {
           {
             <p style={{ fontSize: "25px", textAlign: "center" }}>
               {" "}
-              Bienvenido estudiante, selecciona el ramo al que desees postular como ayudante
+              Bienvenido estudiante a la Plataforma PGAU en donde puedes: Postular a las ayudantias y ver los resultados
             </p>
           }
         </div>
+        <Loginho/>
         <Footer />
       </div>
     </>

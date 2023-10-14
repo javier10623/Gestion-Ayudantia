@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import "./index.css"; 
-import Logo from "../../assets/logo_ucm_marca.png"; 
+import { Link } from "react-router-dom"; // Importa Link desde react-router-dom
+import "./index.css";
+import Logo from "../../assets/logo_ucm_marca.png";
 
 function Navbar(props) {
-
-  // const nombre = props.nombre;
 
   const [menuHamburguesaDesplegado, setMenuHamburguesaDesplegado] = useState(false);
   const [menuUsuarioDesplegado, setMenuUsuarioDesplegado] = useState(false);
@@ -26,14 +25,19 @@ function Navbar(props) {
   return (
     <div className="header">
       <button onClick={toggleMenuHamburguesa} className="header-toggle2">
-      ☰ 
+        ☰
       </button>
       <div className={`headeer-menu ${menuHamburguesaDesplegado ? "header-abierto" : ""}`}>
         <ul className={`opciones ${menuHamburguesaDesplegado ? "mostrar" : ""}`}>
-          <li>Realizar postualción</li>
-          <li>Modificar postulaciones</li>
-          <li>Eliminar postulaciones</li>
-          <li>Resultados de la postulación</li>
+          <li>
+            <Link to="/Postulacion">Realizar postulación</Link>
+          </li>
+          <li>
+            <Link to="/modificar-eliminar-postulaciones">Modificar/Eliminar postulaciones</Link>
+          </li>
+          <li>
+            <Link to="/resultados">Resultados de la postulación</Link>
+          </li>
         </ul>
       </div>
       <img className="logo_ucm" src={Logo} alt="Logo" />

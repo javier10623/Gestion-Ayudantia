@@ -67,7 +67,7 @@
   font-size: small;
 }
 
-/* Estilos para los campos de entrada */
+
 .input {
   width: 100%;
   padding: 10px;
@@ -77,14 +77,14 @@
   font-size: 16px;
 }
 
-/* Estilo para el placeholder */
+
 .input::placeholder {
-  color: #999; /* Color del texto del placeholder */
+  color: #999; 
 }
 
-/* Estilo para el foco en el campo de entrada */
+
 .input:focus {
-  outline: none; /* Elimina el borde al hacer clic en el campo */
-  border-color: #007bff; /* Cambia el color del borde al hacer clic en el campo */
-  box-shadow: 0 0 5px #007bff; /* Agrega una sombra al hacer clic en el campo */
+  outline: none; 
+  border-color: #007bff;
+  box-shadow: 0 0 5px #007bff; 
 }
